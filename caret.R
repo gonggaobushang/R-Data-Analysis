@@ -1,3 +1,5 @@
+#一个例子
+#主要感受数据处理的过程
 library(caret)
 data(mdrr)
 
