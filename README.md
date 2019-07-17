@@ -10,3 +10,6 @@
 
 ## xgboost.R
 简要介绍xgboost包。
+
+## Boruta.R
+用Boruta包进行特征选取。
