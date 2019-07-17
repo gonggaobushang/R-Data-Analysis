@@ -7,3 +7,6 @@
 
 ## EIX.R
 用EIX包探索XGBoost和lightGBM模型的结构。
+
+## xgboost.R
+简要介绍xgboost包。
