@@ -1,9 +1,10 @@
 #EFA因子分析
-# https://blog.csdn.net/woooooood/article/details/81610967
+
 library(psych)
 #主成分分析中，主成分可表示为原始变量的线性组合，原始变量也可表示为因子的线性组合
 #而在因子分析中，原始变量是因子的线性组合，因子却不能表示为主成分的线性组合
-fa(r, nfactors=, n.obs=, rotate=, scores=, fm=) 
+
+#fa(r, nfactors=, n.obs=, rotate=, scores=, fm=) 
 #r:相关系数矩阵或原始数据矩阵， 
 #nfactors:设定主提取的因子数（默认为1） 
 #n.obs:观测数（输入相关系数矩阵时需要填写） 
@@ -22,8 +23,3 @@ fa_model2 <- fa(iris[,c(1:4)], nfactors = 2, rotate = "varimax", fm = "ml")
 fa_model2$weights  #因子与原始变量之间线性回归方程的系数
 factor.plot(fa_model2)
 fa.diagram(fa_model2, simple = FALSE)
-
-
-
-
-
