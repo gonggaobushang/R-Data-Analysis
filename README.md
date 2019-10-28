@@ -16,3 +16,6 @@
 
 ## Date From the Network.R
 直接从网上读取数据，用wind接口在R中获取数据等。
+
+## genetic algorithm.R
+用mcga和genalg包进行遗传算法。
