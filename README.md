@@ -19,3 +19,6 @@
 
 ## genetic algorithm.R
 用mcga和genalg包进行遗传算法。
+
+## EFA psych.R
+用psych包进行因子分析。
