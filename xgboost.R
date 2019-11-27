@@ -120,3 +120,6 @@ bst <- xgb.train(param, dtrain, num_round, watchlist,
 bst <- xgb.cv(param, dtrain, num_round, nfold = 5, 
               objective = logregobj, eval_metric = evalerror,
               maximize = FALSE, early_stopping_rounds = 3)
+
+ypred1 = predict(bst, dtest, 
+                 ntreelimit=1) #用来预测树的数量，对于gbliner无效
