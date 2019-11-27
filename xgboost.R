@@ -112,3 +112,11 @@ evalerror <- function(preds, dtrain) {
 param <- list(max_depth=2, eta=1, silent=1,
               objective = logregobj, eval_metric = evalerror)
 xgb.cv(params = param, data = dtrain, nrounds = nround, nfold = 5)
+
+bst <- xgb.train(param, dtrain, num_round, watchlist, 
+                 objective = logregobj, eval_metric = evalerror, 
+                 early_stopping_round = 3, #如果迭代次后eval-error并没有变好就停止迭代
+                 maximize = FALSE) #如果设置了上面那个参数，那么估计参数是否越大越好
+bst <- xgb.cv(param, dtrain, num_round, nfold = 5, 
+              objective = logregobj, eval_metric = evalerror,
+              maximize = FALSE, early_stopping_rounds = 3)
