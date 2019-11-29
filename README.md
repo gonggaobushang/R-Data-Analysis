@@ -22,3 +22,6 @@
 
 ## EFA psych.R
 用psych包进行因子分析。
+
+## randomForest.R
+用randomForest包跑随机森林算法。
