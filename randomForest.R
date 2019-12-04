@@ -102,3 +102,6 @@ varImpPlot(mtcars.rf) #参数重要性
 
 varUsed(randomForest(Species~., iris, ntree=100), by.tree=FALSE, count=TRUE) #变量在随机森林中被用的次数
 
+#2019.12.4
+#如果要分类，y需要转成factor形式，不然会被当成回归形式
+
