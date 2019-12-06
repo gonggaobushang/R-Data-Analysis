@@ -123,3 +123,25 @@ bst <- xgb.cv(param, dtrain, num_round, nfold = 5,
 
 ypred1 = predict(bst, dtest, 
                  ntreelimit=1) #用来预测树的数量，对于gbliner无效
+
+
+#2019.12.6
+#二分类问题
+#参数调优-逐步、随机
+#先nround
+  param <- list(
+    booster = "gbtree",
+    eval_metric="error",
+    objective='binary:logistic',
+    
+    max_depth=6,
+    min_child_weight=3,
+    gamma=0.2,
+    subsample=1,
+    colsample_bytree =1,
+    lambda=1,
+    lambda_bias=0.5,
+    alpha=0.5,
+    eta=0.3
+  )
+#可设置early_stopping_rounds
