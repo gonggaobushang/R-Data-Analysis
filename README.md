@@ -9,7 +9,7 @@
 用EIX包探索XGBoost和lightGBM模型的结构。
 
 ## xgboost.R
-简要介绍xgboost包。
+简要介绍xgboost包。学习心得。
 
 ## Boruta.R
 用Boruta包进行特征选取。
