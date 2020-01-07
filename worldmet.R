@@ -6,3 +6,4 @@ library(worldmet)
 getMeta(lon = 120.173569,lat=30.251173)
 #提取数据
 importNOAA(code="584570-99999",year = seq(1956,2019))
+#小时级别数据
